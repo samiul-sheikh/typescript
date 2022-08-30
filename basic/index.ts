@@ -14,8 +14,10 @@
 // let studentId: stringOrNumber = 15304913;
 // studentId = "sami-30491";
 
-// Object
+// type direction = "left" | "right" | "top" | "bottom";
+// let puzzleDirection: direction = "left";
 
+// Object
 // let student = {
 //   name: "sami",
 //   id: 10,
@@ -135,18 +137,60 @@
 // });
 
 // destructure object
-interface Student {
-  name: string;
-  id: number;
-  dept: string;
-}
+// interface Student {
+//   name: string;
+//   id: number;
+//   dept: string;
+// }
 
-const user = ({ name, id, dept }: Student): void => {
-  console.log(`Hello I'am ${name}, My ID is ${id} & my Dept is ${dept}`);
-};
+// const user = ({ name, id, dept }: Student): void => {
+//   console.log(`Hello I'am ${name}, My ID is ${id} & my Dept is ${dept}`);
+// };
 
-user({
-  name: "Samiul Sheikh",
-  id: 15,
-  dept: "CSE",
-});
+// user({
+//   name: "Samiul Sheikh",
+//   id: 15,
+//   dept: "CSE",
+// });
+
+// const getArray = (arr: string[]): string[] => {
+//   return arr;
+// };
+// getArray(["hello"]);
+
+// Generic send type dynamically
+// const getArray = <T>(arr: T[]): T[] => {
+//   return arr;
+// };
+// getArray<string>(["hello"]);
+// getArray<number>([1,1,1,1,]);
+
+// const getArray = <T, T1>(arr: T[]): T[] => {
+//   return arr;
+// };
+// getArray<string, number>(["hello"]);
+// getArray<number | string>([1,1,1,1, 's']);
+
+// enum
+// enum Week {
+//   Sat,
+//   Sun,
+//   Mon,
+//   Tue,
+//   Wed,
+//   Thu,
+//   Fri,
+// }
+// console.log(Week.Mon);
+
+// print string type
+// enum Week {
+//   Sat = "SAT",
+//   Sun = "SUN",
+//   Mon = "MON",
+//   Tue = "TUE",
+//   Wed = "WED",
+//   Thu = "THU",
+//   Fri = "FRI",
+// }
+// console.log(Week.Mon);
